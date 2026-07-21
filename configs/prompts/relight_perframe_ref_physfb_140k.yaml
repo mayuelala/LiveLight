@@ -1,0 +1,46 @@
+batch_size: 1
+height: 512
+width: 512
+num_inference_steps: 4
+dtype: "fp16"
+
+vae_model_path: "./pretrained_weights/sd-vae-ft-mse"
+image_encoder_path: "./pretrained_weights/sd-image-variations-diffusers/image_encoder"
+pretrained_base_model_path: "./pretrained_weights/sd-image-variations-diffusers"
+
+reference_unet_weight_path: "./exp_output/relight_stage2_physfb_continue110k_to140k_3gpu_bs1_acc5_xf_r512/reference_unet-140000.pth"
+denoising_unet_path: "./exp_output/relight_stage2_physfb_continue110k_to140k_3gpu_bs1_acc5_xf_r512/denoising_unet-140000.pth"
+light_guider_path: "./exp_output/relight_stage2_physfb_continue110k_to140k_3gpu_bs1_acc5_xf_r512/light_guider-140000.pth"
+
+light_channels: 12
+use_multiscale_light_injection: true
+multiscale_light_injection_scale: 0.25
+stage3_history_length: 16
+temporal_window_size: 4
+temporal_adaptive_step: 4
+timesteps_list: [999, 666, 333, 0]
+temporal_module_path: "./exp_output/stg3_pf_13156_xnemo_a800_7g_10k_directcarry/temporal_module-20000.pth"
+
+inference_config: "./configs/inference/inference_stage3.yaml"
+seed: 42
+
+ppd_root: "./pixel-perfect-depth"
+ppd_python: "python"
+cache_dir: "./cache/relight_live_perframe_ref_physfb_140k"
+
+anchor_u: 0.5
+anchor_v: 0.5
+depth_patch_radius: 3
+plane_multipliers: [0.25, 0.5, 0.75, 1.0]
+base_s1: 25000.0
+canonical_subject_depth: 256.0
+s2: 1.0
+focal_scale: 1.0
+
+default_light_u: 0.5
+default_light_v: 0.35
+default_light_z_rel: 1.0
+default_light_intensity: 1.0
+default_light_r: 1.0
+default_light_g: 1.0
+default_light_b: 1.0

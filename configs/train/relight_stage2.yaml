@@ -1,0 +1,61 @@
+data:
+  train_bs: 2
+  train_width: 512
+  train_height: 512
+  num_workers: 8
+  image_root: ./data/image
+  mpli_root: ./data/condition
+  sample_list_path: ./data/sample_list_mixed.txt
+  source_frame_id: 0
+  lit_frame_start: 1
+
+model:
+  light_channels: 12
+  enable_multiscale_light_injection: true
+  multiscale_light_injection_scale: 0.25
+
+solver:
+  gradient_accumulation_steps: 1
+  mixed_precision: fp16
+  enable_xformers_memory_efficient_attention: true
+  gradient_checkpointing: false
+  max_train_steps: 110000
+  max_grad_norm: 1.0
+  learning_rate: 1.0e-05
+  scale_lr: false
+  lr_warmup_steps: 1
+  lr_scheduler: constant
+  use_8bit_adam: false
+  adam_beta1: 0.9
+  adam_beta2: 0.999
+  adam_weight_decay: 0.01
+  adam_epsilon: 1.0e-08
+
+loss:
+  # Relight Stage 2 intentionally starts without the PersonaLive FFHQ GAN.
+  # The FFHQ discriminator is face-biased; first validate fewer-step
+  # distillation with generic reconstruction and perceptual losses.
+  mse_weight: 1.0
+  lpips_weight: 2.0
+  adversarial_weight: 0.0
+
+timesteps_list: [999, 666, 333, 0]
+
+base_model_path: ./pretrained_weights/sd-image-variations-diffusers
+vae_model_path: ./pretrained_weights/sd-vae-ft-mse
+image_encoder_path: ./pretrained_weights/sd-image-variations-diffusers/image_encoder
+inference_config: ./configs/inference/inference_stage1&2.yaml
+weight_dtype: fp16
+uncond_ratio: 0.1
+noise_offset: 0.05
+seed: 12580
+
+resume_from_checkpoint: ''
+warm_start_dir: ./exp_output/relight_stage1_tmux_bs2_80k_mixed_ps50_zero_tolerance_v1
+warm_start_step: 80000
+checkpointing_steps: 4000
+preview_every_steps: 200
+save_model_epoch_interval: 100000
+save_final_model: true
+exp_name: relight_stage2
+output_dir: ./exp_output

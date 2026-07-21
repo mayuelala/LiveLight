@@ -1,0 +1,21 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.so
+
+# Pretrained weights and training outputs
+pretrained_weights/
+exp_output/
+
+# Runtime leftovers
+*.log
+*.tmp
+*.swp
+.DS_Store
+
+# Frontend installs
+webcam/frontend/node_modules/
+
+# Local envs
+.venv/
+venv/
