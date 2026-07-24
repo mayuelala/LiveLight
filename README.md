@@ -20,7 +20,31 @@ pip install -r requirements.txt
 accelerate config
 ```
 
-Before training or inference, download the required pretrained models and update the corresponding paths in `configs/train/` and `configs/prompts/`. The default configurations expect a directory structure similar to:
+### Download LiveLight Weights
+
+Install ModelScope and download the released LiveLight weights:
+
+```bash
+python -m pip install modelscope
+python download_weights.py
+```
+
+The script runs the equivalent ModelScope command:
+
+```bash
+modelscope download --model wjm1029/LiveLight \
+  --local_dir pretrained_weights/LiveLight
+```
+
+By default, the weights are downloaded from `wjm1029/LiveLight` to `pretrained_weights/LiveLight`. A different destination can be selected with:
+
+```bash
+python download_weights.py --output-dir path/to/LiveLight_weights
+```
+
+The ModelScope repository provides our trained denoising UNet, reference UNet, temporal module, and light guider weights. Update the corresponding paths in `configs/train/` and `configs/prompts/` after downloading them.
+
+The Stable Diffusion Image Variations base model, VAE, image encoder, and other third-party weights are not included. Download them separately from Hugging Face. The default configurations expect a directory structure similar to:
 
 ```text
 pretrained_weights/
