@@ -44,13 +44,13 @@ We present **LiveLight**, the first diffusion-based framework for real-time stre
 
 ## 🎬 Results
 
-Each example is arranged as **input video**, **target light**, and **LiveLight output**. Visit the [project page](https://living-lighting.github.io/) for videos and more results.
+Each animated case is arranged as **input video**, **target light**, and **LiveLight output**. The GIFs loop a short segment; visit the [project page](https://living-lighting.github.io/) for full-length videos and more results.
 
 <table align="center">
   <tr>
-    <td><img src="assets/readme/result-market.jpg" width="384" alt="Market relighting result"></td>
-    <td><img src="assets/readme/result-action.jpg" width="384" alt="Action relighting result"></td>
-    <td><img src="assets/readme/result-library.jpg" width="384" alt="Library relighting result"></td>
+    <td><img src="assets/readme/short-market.gif" width="384" alt="Animated market relighting result"></td>
+    <td><img src="assets/readme/color-action.gif" width="384" alt="Animated action relighting result"></td>
+    <td><img src="assets/readme/long-library.gif" width="384" alt="Animated library relighting result"></td>
   </tr>
   <tr>
     <td align="center">Natural illumination</td>
@@ -58,9 +58,9 @@ Each example is arranged as **input video**, **target light**, and **LiveLight o
     <td align="center">Long-video streaming</td>
   </tr>
   <tr>
-    <td><img src="assets/readme/result-portrait.jpg" width="384" alt="Portrait relighting result"></td>
-    <td><img src="assets/readme/result-lego.jpg" width="384" alt="LEGO relighting result"></td>
-    <td><img src="assets/readme/result-period.jpg" width="384" alt="Period-scene relighting result"></td>
+    <td><img src="assets/readme/color-portrait.gif" width="384" alt="Animated portrait relighting result"></td>
+    <td><img src="assets/readme/color-lego.gif" width="384" alt="Animated LEGO relighting result"></td>
+    <td><img src="assets/readme/color-period.gif" width="384" alt="Animated period-scene relighting result"></td>
   </tr>
   <tr>
     <td align="center">Portrait lighting</td>
@@ -68,9 +68,9 @@ Each example is arranged as **input video**, **target light**, and **LiveLight o
     <td align="center">Cinematic lighting</td>
   </tr>
   <tr>
-    <td><img src="assets/readme/result-chef.jpg" width="384" alt="Chef relighting result"></td>
-    <td><img src="assets/readme/result-animation.jpg" width="384" alt="Animation relighting result"></td>
-    <td><img src="assets/readme/result-toy-drummer.jpg" width="384" alt="Toy drummer relighting result"></td>
+    <td><img src="assets/readme/short-chef.gif" width="384" alt="Animated chef relighting result"></td>
+    <td><img src="assets/readme/long-animation.gif" width="384" alt="Animated animation relighting result"></td>
+    <td><img src="assets/readme/long-toy-drummer.gif" width="384" alt="Animated toy drummer relighting result"></td>
   </tr>
   <tr>
     <td align="center">Complex indoor scenes</td>
