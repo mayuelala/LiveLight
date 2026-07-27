@@ -24,10 +24,10 @@ Yue Ma<sup>1</sup>, Jiangming Wang<sup>1</sup>, Yucheng Wang<sup>1</sup>, Xilai 
 ## 🎥 Demo Video
 
 <p align="center">
-  <a href="assets/demo.mp4"><img src="assets/readme/demo-poster.jpg" width="94%" alt="Preview of the LiveLight demo video"></a>
+  <img src="assets/readme/demo-preview.gif" width="70%" alt="Animated preview of the LiveLight demo video">
 </p>
 
-<p align="center"><sub><a href="assets/demo.mp4">▶ Watch the full 4 min 34 sec LiveLight demo video (720p MP4)</a></sub></p>
+<p align="center"><sub>12-second animated preview · <a href="assets/demo.mp4">Download the full 4 min 34 sec demo video (720p MP4)</a></sub></p>
 
 ## ✨ Abstract
 
@@ -45,36 +45,6 @@ We present **LiveLight**, the first diffusion-based framework for real-time stre
 - **[2026.07.27]** Code and ModelScope weights are released.
 - **[2026.07.24]** Project page and paper are released.
 
-## 🎛️ Interactive Control
-
-LiveLight provides a single interface for source-video input, 3D drag-based point-light editing, intensity and color control, and real-time streaming output.
-
-<p align="center">
-  <a href="assets/figures/gui.pdf"><img src="assets/readme/gui.png" width="96%" alt="LiveLight interface for interactive 3D point-light control"></a>
-</p>
-
-<p align="center"><sub>Click the figure for the full-resolution PDF.</sub></p>
-
-## 💡 Why Streaming Relighting?
-
-Existing video relighting methods require a complete clip and a predetermined lighting trajectory before generation can begin. LiveLight instead emits relit frames continuously, allowing the light to change while the video is in progress.
-
-<p align="center">
-  <a href="assets/figures/motivation.pdf"><img src="assets/readme/motivation.png" width="96%" alt="Comparison between offline video relighting and LiveLight streaming relighting"></a>
-</p>
-
-<p align="center"><sub>Click the figure for the full-resolution PDF.</sub></p>
-
-## 🧩 Method
-
-LiveLight combines (a) lightweight Multi-Plane Light Irradiance control, (b) geometry-guided few-step distillation, and (c) a rolling-window strategy for temporally coherent streaming video relighting.
-
-<p align="center">
-  <a href="assets/figures/framework.pdf"><img src="assets/readme/framework.jpg" width="96%" alt="LiveLight framework overview"></a>
-</p>
-
-<p align="center"><sub>Click the figure for the full-resolution PDF.</sub></p>
-
 ## 🎬 Results
 
 Each example is arranged as **input video**, **target light**, and **LiveLight output**. Visit the [project page](https://living-lighting.github.io/) for videos and more results.
@@ -89,6 +59,26 @@ Each example is arranged as **input video**, **target light**, and **LiveLight o
     <td align="center">Natural illumination</td>
     <td align="center">RGB color control</td>
     <td align="center">Long-video streaming</td>
+  </tr>
+  <tr>
+    <td><img src="assets/readme/result-portrait.jpg" width="384" alt="Portrait relighting result"></td>
+    <td><img src="assets/readme/result-lego.jpg" width="384" alt="LEGO relighting result"></td>
+    <td><img src="assets/readme/result-period.jpg" width="384" alt="Period-scene relighting result"></td>
+  </tr>
+  <tr>
+    <td align="center">Portrait lighting</td>
+    <td align="center">Color-conditioned lighting</td>
+    <td align="center">Cinematic lighting</td>
+  </tr>
+  <tr>
+    <td><img src="assets/readme/result-chef.jpg" width="384" alt="Chef relighting result"></td>
+    <td><img src="assets/readme/result-animation.jpg" width="384" alt="Animation relighting result"></td>
+    <td><img src="assets/readme/result-toy-drummer.jpg" width="384" alt="Toy drummer relighting result"></td>
+  </tr>
+  <tr>
+    <td align="center">Complex indoor scenes</td>
+    <td align="center">Stylized content</td>
+    <td align="center">Dynamic long sequences</td>
   </tr>
 </table>
 
