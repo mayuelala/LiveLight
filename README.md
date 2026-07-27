@@ -26,11 +26,6 @@ Yue Ma<sup>1</sup>, Jiangming Wang<sup>1</sup>, Yucheng Wang<sup>1</sup>, Xilai 
 
 https://github.com/user-attachments/assets/5325216d-18b3-4f60-9b51-27cfc417fa25
 
-
-
-
-<p align="center"><sub>12-second animated preview · <a href="assets/demo.mp4">Download the full 4 min 34 sec demo video (720p MP4)</a></sub></p>
-
 ## ✨ Abstract
 
 **TL;DR:** LiveLight is the first diffusion-based framework for real-time streaming video relighting with interactive 3D point-light control. It lets users adjust light position, intensity, and color while preserving appearance and temporal coherence.
