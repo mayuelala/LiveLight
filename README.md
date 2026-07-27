@@ -24,7 +24,11 @@ Yue Ma<sup>1</sup>, Jiangming Wang<sup>1</sup>, Yucheng Wang<sup>1</sup>, Xilai 
 ## 🎥 Demo Video
 
 
-https://github.com/user-attachments/assets/5325216d-18b3-4f60-9b51-27cfc417fa25
+
+
+https://github.com/user-attachments/assets/ddfdb443-c41b-4038-9029-8f2bf33d57a0
+
+
 
 ## ✨ Abstract
 
