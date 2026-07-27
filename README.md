@@ -23,9 +23,11 @@ Yue Ma<sup>1</sup>, Jiangming Wang<sup>1</sup>, Yucheng Wang<sup>1</sup>, Xilai 
 
 ## 🎥 Demo Video
 
-<p align="center">
-  <img src="assets/readme/demo-preview.gif" width="70%" alt="Animated preview of the LiveLight demo video">
-</p>
+
+https://github.com/user-attachments/assets/5325216d-18b3-4f60-9b51-27cfc417fa25
+
+
+
 
 <p align="center"><sub>12-second animated preview · <a href="assets/demo.mp4">Download the full 4 min 34 sec demo video (720p MP4)</a></sub></p>
 
