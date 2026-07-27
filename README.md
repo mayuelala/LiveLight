@@ -4,6 +4,8 @@
 
 ### Real-time Streaming Video Relighting with Interactive Control
 
+**ACM Transactions on Graphics (TOG) 2026**
+
 Yue Ma<sup>1</sup>, Jiangming Wang<sup>1</sup>, Yucheng Wang<sup>1</sup>, Xilai Wang<sup>1</sup>, Zhiyuan Li<sup>2</sup>, Xinyu Wang<sup>3</sup>, Hongyu Liu<sup>1</sup>, Ruofan Liang<sup>4</sup>, Songchun Zhang<sup>1</sup>, Yuxuan Xue<sup>5</sup>, and Qifeng Chen<sup>1†</sup>
 
 <sup>1</sup>HKUST &nbsp; <sup>2</sup>University of Macau &nbsp; <sup>3</sup>THU &nbsp; <sup>4</sup>UoT &nbsp; <sup>5</sup>University of Tuebingen
@@ -18,6 +20,14 @@ Yue Ma<sup>1</sup>, Jiangming Wang<sup>1</sup>, Yucheng Wang<sup>1</sup>, Xilai 
 <p align="center">
   <a href="https://living-lighting.github.io/"><img src="assets/readme/teaser.jpg" width="94%" alt="LiveLight video relighting results"></a>
 </p>
+
+## 🎥 Demo Video
+
+<p align="center">
+  <a href="assets/demo.mp4"><img src="assets/readme/demo-poster.jpg" width="94%" alt="Preview of the LiveLight demo video"></a>
+</p>
+
+<p align="center"><sub><a href="assets/demo.mp4">▶ Watch the full 4 min 34 sec LiveLight demo video (720p MP4)</a></sub></p>
 
 ## ✨ Abstract
 
