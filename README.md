@@ -16,7 +16,7 @@ Yue Ma<sup>1</sup>, Jiangming Wang<sup>1</sup>, Yucheng Wang<sup>1</sup>, Xilai 
 </div>
 
 <p align="center">
-  <a href="https://living-lighting.github.io/"><img src="https://living-lighting.github.io/assets/images/hero-mosaic.jpg" width="94%" alt="LiveLight video relighting results"></a>
+  <a href="https://living-lighting.github.io/"><img src="assets/readme/teaser.jpg" width="94%" alt="LiveLight video relighting results"></a>
 </p>
 
 ## ✨ Abstract
@@ -30,25 +30,64 @@ We present **LiveLight**, the first diffusion-based framework for real-time stre
 
 </details>
 
+## 🔥 Changelog
+
+- **[2026.07.27]** Code and ModelScope weights are released.
+- **[2026.07.24]** Project page and paper are released.
+
+## 🎛️ Interactive Control
+
+LiveLight provides a single interface for source-video input, 3D drag-based point-light editing, intensity and color control, and real-time streaming output.
+
+<p align="center">
+  <a href="assets/figures/gui.pdf"><img src="assets/readme/gui.png" width="96%" alt="LiveLight interface for interactive 3D point-light control"></a>
+</p>
+
+<p align="center"><sub>Click the figure for the full-resolution PDF.</sub></p>
+
+## 💡 Why Streaming Relighting?
+
+Existing video relighting methods require a complete clip and a predetermined lighting trajectory before generation can begin. LiveLight instead emits relit frames continuously, allowing the light to change while the video is in progress.
+
+<p align="center">
+  <a href="assets/figures/motivation.pdf"><img src="assets/readme/motivation.png" width="96%" alt="Comparison between offline video relighting and LiveLight streaming relighting"></a>
+</p>
+
+<p align="center"><sub>Click the figure for the full-resolution PDF.</sub></p>
+
+## 🧩 Method
+
+LiveLight combines (a) lightweight Multi-Plane Light Irradiance control, (b) geometry-guided few-step distillation, and (c) a rolling-window strategy for temporally coherent streaming video relighting.
+
+<p align="center">
+  <a href="assets/figures/framework.pdf"><img src="assets/readme/framework.jpg" width="96%" alt="LiveLight framework overview"></a>
+</p>
+
+<p align="center"><sub>Click the figure for the full-resolution PDF.</sub></p>
+
+## 🎬 Results
+
+Each example is arranged as **input video**, **target light**, and **LiveLight output**. Visit the [project page](https://living-lighting.github.io/) for videos and more results.
+
+<table align="center">
+  <tr>
+    <td><img src="assets/readme/result-market.jpg" width="384" alt="Market relighting result"></td>
+    <td><img src="assets/readme/result-action.jpg" width="384" alt="Action relighting result"></td>
+    <td><img src="assets/readme/result-library.jpg" width="384" alt="Library relighting result"></td>
+  </tr>
+  <tr>
+    <td align="center">Natural illumination</td>
+    <td align="center">RGB color control</td>
+    <td align="center">Long-video streaming</td>
+  </tr>
+</table>
+
 ## ✨ Highlights
 
 - **Interactive 3D lighting:** control point-light position, intensity, and RGB color directly.
 - **Real-time streaming:** relight an arbitrarily long video stream without waiting for a complete clip.
 - **High fidelity in four steps:** geometry-guided few-step distillation preserves structure, appearance, and temporal consistency.
 - **Fast inference:** 15.78 FPS and 0.253 s latency with the standard VAE.
-
-<p align="center">
-  <img src="https://living-lighting.github.io/assets/images/interface-case1.jpg" width="31%" alt="LiveLight interactive interface example">
-  <img src="https://living-lighting.github.io/assets/images/interface-case4.jpg" width="31%" alt="LiveLight interactive interface example">
-  <img src="https://living-lighting.github.io/assets/images/interface-case8.jpg" width="31%" alt="LiveLight interactive interface example">
-</p>
-
-For more interactive demos, video results, and the full method, please visit the [project page](https://living-lighting.github.io/).
-
-## 🔥 Changelog
-
-- **[2026.07.27]** Code and ModelScope weights are released.
-- **[2026.07.24]** Project page and paper are released.
 
 ## 🛠️ Setup Environment
 
