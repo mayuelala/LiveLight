@@ -52,40 +52,43 @@ We present **LiveLight**, the first diffusion-based framework for real-time stre
 
 ## 🎬 Results
 
-Each animated case is arranged as **input video**, **target light**, and **LiveLight output**. The GIFs loop a short segment; visit the [project page](https://living-lighting.github.io/) for full-length videos and more results.
+Each video is arranged as **input video**, **target light**, and **LiveLight output**.
 
-<table align="center">
-  <tr>
-    <td><img src="assets/readme/short-market.gif" width="384" alt="Animated market relighting result"></td>
-    <td><img src="assets/readme/color-action.gif" width="384" alt="Animated action relighting result"></td>
-    <td><img src="assets/readme/long-library.gif" width="384" alt="Animated library relighting result"></td>
-  </tr>
-  <tr>
-    <td align="center">Natural illumination</td>
-    <td align="center">RGB color control</td>
-    <td align="center">Long-video streaming</td>
-  </tr>
-  <tr>
-    <td><img src="assets/readme/color-portrait.gif" width="384" alt="Animated portrait relighting result"></td>
-    <td><img src="assets/readme/color-lego.gif" width="384" alt="Animated LEGO relighting result"></td>
-    <td><img src="assets/readme/color-period.gif" width="384" alt="Animated period-scene relighting result"></td>
-  </tr>
-  <tr>
-    <td align="center">Portrait lighting</td>
-    <td align="center">Color-conditioned lighting</td>
-    <td align="center">Cinematic lighting</td>
-  </tr>
-  <tr>
-    <td><img src="assets/readme/short-chef.gif" width="384" alt="Animated chef relighting result"></td>
-    <td><img src="assets/readme/long-animation.gif" width="384" alt="Animated animation relighting result"></td>
-    <td><img src="assets/readme/long-toy-drummer.gif" width="384" alt="Animated toy drummer relighting result"></td>
-  </tr>
-  <tr>
-    <td align="center">Complex indoor scenes</td>
-    <td align="center">Stylized content</td>
-    <td align="center">Dynamic long sequences</td>
-  </tr>
-</table>
+### Natural illumination
+
+https://github.com/user-attachments/assets/a4b66a52-44da-41e2-821a-e39d142c1aa7
+
+### RGB color control
+
+https://github.com/user-attachments/assets/dfea9ce8-494f-47a1-b5f0-1cf867363a70
+
+### Long-video streaming
+
+https://github.com/user-attachments/assets/7d9f91d8-6832-4bee-ad2b-82a63277da8b
+
+### Portrait lighting
+
+https://github.com/user-attachments/assets/9cd06769-c1d4-410d-a9ca-85f3e112aee8
+
+### Color-conditioned lighting
+
+https://github.com/user-attachments/assets/247f3ef8-25a7-40c2-aa5f-f5e5e51d21b1
+
+### Cinematic lighting
+
+https://github.com/user-attachments/assets/5715a39e-a85c-49fd-bb95-8620eba11a4f
+
+### Complex indoor scenes
+
+https://github.com/user-attachments/assets/0ce75698-6af4-4562-a216-61901f634e1a
+
+### Stylized content
+
+https://github.com/user-attachments/assets/703d7d98-f5c3-4910-b195-d7de5b30e585
+
+### Dynamic long sequences
+
+https://github.com/user-attachments/assets/dc61ce08-404a-4642-913f-9d4462b79a22
 
 ## ✨ Highlights
 
