@@ -10,7 +10,7 @@ Yue Ma<sup>1</sup>, Jiangming Wang<sup>1</sup>, Yucheng Wang<sup>1</sup>, Xilai 
 
 <sup>1</sup>HKUST &nbsp; <sup>2</sup>University of Macau &nbsp; <sup>3</sup>THU &nbsp; <sup>4</sup>UoT &nbsp; <sup>5</sup>University of Tuebingen
 
-<a href="https://living-lighting.github.io/assets/LiveLight.pdf"><img src="https://img.shields.io/badge/Paper-PDF-dc2626?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="Paper PDF"></a>
+<a href="https://arxiv.org/abs/2608.01771"><img src="https://img.shields.io/badge/Paper-PDF-dc2626?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="Paper"></a>
 <a href="https://living-lighting.github.io/"><img src="https://img.shields.io/badge/Project-Page-15803d?style=for-the-badge" alt="Project Page"></a>
 <a href="https://modelscope.cn/models/wjm1029/LiveLight"><img src="https://img.shields.io/badge/ModelScope-Weights-624AFF?style=for-the-badge" alt="ModelScope Weights"></a>
 <a href="https://github.com/mayuelala/LiveLight"><img src="https://img.shields.io/github/stars/mayuelala/LiveLight?style=for-the-badge&logo=github&label=Star" alt="GitHub stars"></a>
@@ -205,15 +205,11 @@ python inference_livelight_stage3.py \
 If you find LiveLight useful, please consider citing:
 
 ```bibtex
-@article{livelight2026,
-  title   = {LiveLight: Real-time Streaming Video Relighting
-             with Interactive Control},
-  author  = {Yue Ma and Jiangming Wang and Yucheng Wang and
-             Xilai Wang and Zhiyuan Li and Xinyu Wang and
-             Hongyu Liu and Ruofan Liang and Songchun Zhang and
-             Yuxuan Xue and Qifeng Chen},
-  journal = {ACM Transactions on Graphics},
-  year    = {2026}
+@article{ma2026livelight,
+  title={LiveLight: Real-time Streaming Video Relighting with Interactive Control},
+  author={Ma, Yue and Wang, Jiangming and Wang, Yucheng and Wang, Xilai and Li, Zhiyuan and Wang, Xinyu and Liu, Hongyu and Liang, Ruofan and Zhang, Songchun and Xue, Yuxuan and Chen, Qifeng},
+  journal={arXiv preprint arXiv:2608.01771},
+  year={2026}
 }
 ```
 
